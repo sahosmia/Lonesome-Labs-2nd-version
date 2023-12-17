@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lonesome Labs</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- swiper css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="w-full">
+      <nav>
+        <div
+          class="container flex justify-between w-full items-center h-20 bg-white"
+        >
+          <div class="pr-20">
+            <img class="w-full" src="/img/logo.png" alt="" />
+          </div>
+
+          <div
+            id="menu"
+            class="max-lg:p-10 max-lg:border bg-gray-50 lg:bg-white max-lg:left-0 max-lg:right-0 w-full nav-links duration-500 lg:static absolute top-[-100%] z-10"
+          >
+            <ul
+              class="flex flex-col lg:flex-row items-center justify-center gap-5"
+            >
+              <li>
+                <a
+                  class="text-[#2B2B2B] font-medium py-3 px-4 rounded-[30px]"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#2B2B2B] font-medium py-3 px-4 rounded-[30px] bg-[#4361ee4d]"
+                  href="seller.html"
+                  >Amazon Seller Apps</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#2B2B2B] font-medium py-3 px-4 rounded-[30px]"
+                  href="team.html"
+                  >Meet the Team</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#2B2B2B] font-medium py-3 px-4 rounded-[30px]"
+                  href="#"
+                  >Learn</a
+                >
+              </li>
+              <li>
+                <div class="relative group inline-block">
+                  <button
+                    class="text-[#2B2B2B] font-medium py-3 px-4 inline-flex items-center"
+                  >
+                    <span class="mr-1">Product</span>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10 12l-8 8H2l8-8-8-8h2l8 8zm8-8l-8 8-8-8h2l8 8 8-8h-2z"
+                      />
+                    </svg>
+                  </button>
+
+                  <ul
+                    class="absolute hidden w-60 bg-white shadow border text-[#2B2B2B] font-medium rounded overflow-hidden group-hover:block"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="border-b hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
+                        >Item 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="border-b hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
+                        >Item 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
+                        >Item 3</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="block lg:hidden">
+                <a
+                  class="text-[#2B2B2B] font-medium py-3 px-4 rounded-[30px] flex gap-2"
+                  href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.5 14.5C5.5 12.0147 7.51472 10 10 10C12.4853 10 14.5 12.0147 14.5 14.5"
+                      stroke="#2B2B2B"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M10.0008 9.99961C11.492 9.99961 12.7008 8.79082 12.7008 7.29961C12.7008 5.80844 11.492 4.59961 10.0008 4.59961C8.50957 4.59961 7.30078 5.80844 7.30078 7.29961C7.30078 8.79082 8.50957 9.99961 10.0008 9.99961Z"
+                      stroke="#2B2B2B"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
+                      stroke="#2B2B2B"
+                      stroke-width="1.6"
+                    /></svg
+                  >login/register</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex justify-center items-center gap-3">
+            <a class="hidden lg:flex items-center gap-2" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M5.5 14.5C5.5 12.0147 7.51472 10 10 10C12.4853 10 14.5 12.0147 14.5 14.5"
+                  stroke="#2B2B2B"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10.0008 9.99961C11.492 9.99961 12.7008 8.79082 12.7008 7.29961C12.7008 5.80844 11.492 4.59961 10.0008 4.59961C8.50957 4.59961 7.30078 5.80844 7.30078 7.29961C7.30078 8.79082 8.50957 9.99961 10.0008 9.99961Z"
+                  stroke="#2B2B2B"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
+                  stroke="#2B2B2B"
+                  stroke-width="1.6"
+                />
+              </svg>
+              <span class="text-[#2B2B2B] font-medium">login/register</span>
+            </a>
+
+            <div
+              class="block lg:hidden cursor-pointer"
+              id="humber-icon"
+              onclick="onToggleMenu(this)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="16"
+                viewBox="0 0 24 22"
+                fill="none"
+              >
+                <path d="M24 0H0V2.18182H24V0Z" fill="#0B090A" />
+                <path d="M24 9.81836H0V12.0002H24V9.81836Z" fill="#0B090A" />
+                <path d="M24 19.6362H0V21.818H24V19.6362Z" fill="#0B090A" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <!-- Hero Start -->
+      <section
+        id="hero-section"
+        class="relative overflow-hidden -z-10 bg-[#F8F8F8]"
+      >
+        <div
+          class="text-center flex flex-col justify-center pt-16 pb-24 md:pb-32 lg:pb-44 z-10"
+        >
+          <h1 class="text-[40px] md:text-[76px] font-bold text-main">
+            Terms of Service
+          </h1>
+
+          <p
+            class="text-2xl md:text-4xl py-8 md:py-14 px-2 sm:px-14 max-w-3xl text-center m-auto text-black text-opacity-75"
+          >
+            Lonesome Labs Terms of Use
+          </p>
+        </div>
+
+        <div
+          class="w-full h-[calc(100%+500px)] sm:h-[calc(100%+350px)] md:h-[calc(100%+350px)] absolute bg-center max-md:-top-[160%] md:-top-[110%] left-0 rounded-full overflow-hidden -z-10"
+        >
+          <div
+            class="bg-gradient-to-b from-secondary to-main opacity-20 absolute top-0 left-0 w-full h-full rounded-full -z-10"
+          ></div>
+        </div>
+      </section>
+      <!-- Hero End -->
+
+      <!-- Team Start -->
+      <section class="py-5 md:py-20 bg-[#F8F8F8]">
+        <div class="container md:px-40">
+
+          <div class="pb-10 md:pb-16">
+            <h5 class="text-2xl leading-8 md:text-3xl font-bold mdleading-10">
+              Last Revised: 07 June 2021
+            </h5>
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:8px]"
+            >
+              Lonesome Labs, Ltd. (<span class="font-semibold"
+                >“Lonesome“, “we“, “our“, “Company“</span
+              >) welcomes you (the <span>“User</span>(s)”, or
+              <span>“you“</span>) to our website located at
+              <a
+                class="underline text-[#392DCA] text-normal"
+                href="https://lonesomelabs.com/"
+                >https://lonesomelabs.com/</a
+              >
+              and to our the services we provide through the Apps (as defined
+              below), in compliance with applicable privacy and personal data
+              laws and regulations. The Website and the Apps shall be together
+              referred to hereunder as the “Services”. The terms and conditions
+              below govern your use of the Services.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              Acceptance of the Terms
+            </h6>
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:8px]"
+            >
+              PLEASE READ CAREFULLY THESE TERMS AND CONDITIONS INCLUDING THE
+              PROVISIONS OF THE PRIVACY POLICY AVAILABLE AT
+              <a
+                class="underline text-[#392DCA] text-normal"
+                href="https://lonesomelabs.com/privacy-policy/"
+                >https://lonesomelabs.com/privacy-policy/</a
+              >
+              AND OUR COOKIE CHART
+              <a
+                class="underline text-[#392DCA] text-normal"
+                href="https://lonesomelabs.com/cookie-chart/"
+                >https://lonesomelabs.com/cookie-chart/</a
+              >
+              WHICH IS INCORPORATED BY REFERENCE HEREIN (THE
+              <span class="font-semibold">“PRIVACY POLICY”</span>, COLLECTIVELY
+              THE <span class="font-semibold">“TERMS”</span> ). BY CLICKING ON
+              THE “AGREE” BUTTON BELOW AND BY DOWNLOADING, INSTALLING OR
+              OTHERWISE USING THE SERVICES ON YOUR AMAZON SELLER ACOUNT (“AMAZON
+              ACCOUNT”), YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF
+              THIS AGREEMENT.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:8px]"
+            >
+              IF YOU DO NOT AGREE TO BE BOUND BY THIS AGREEMENT, THEN DO NOT
+              CLICK “I AGREE” OR DOWNLOAD, INSTALL OR USE THE SERVICES.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              The Services
+            </h6>
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              <span class="font-semibold">The Apps.</span> Lonesome offers a
+              high-impact applications enabling Amazon sellers to better operate
+              within the Amazon platform by automating tasks, streamlining data
+              and creating day-to-day operational efficiencies.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              <span class="font-semibold">Access.</span>
+              In the event You wish to use and access the Services, you may be
+              required to subscribe through our Services by providing your email
+              address and determine your personal username and password (<span
+                class="font-semibold"
+                >“Login Credentials”</span
+              >) or, alternatively, subscribe through your social media account
+              (i.e., your Amazon Account, Google account, Facebook account or
+              twitter account) (<span class="font-semibold"
+                >“Single SignOn Account”</span
+              >). Users may only access and use the Services through the Login
+              Credentials or their Single SignOn Account and is responsible for
+              maintaining the confidentiality of the Login Credentials or of the
+              Single SignOn Account credentials. Any instruction, action or
+              activity occurring through any such Login Credentials or Single
+              SignOn Account, shall be deemed to be provided and/or taken by
+              User, and User shall be responsible for all such activities,
+              including for any unauthorized use of such Login Credentials.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              <span class="font-semibold">Use.</span> Subject to your compliance
+              with the terms and conditions of the Terms, Lonesome hereby grants
+              to you a nonexclusive, revocable, non-assignable,
+              non-transferable, non-sublicensable temporary, limited right to
+              (i) install and use the Services on a single Amazon Account for
+              your own personal or internal business purposes only, unless
+              otherwise authorized; (ii) use the documentation provided within
+              the Services (the
+              <span class="font-semibold">“Documentation”</span>) and make
+              reasonable copies for training, reference and back-up purposes.
+              Pursuant to the aforementioned, you may access the Services via
+              individuals who are authorized by you therefor in accordance with
+              these Terms.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              1. Use Restrictions
+            </h6>
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              There are certain conducts which are strictly prohibited when
+              using the Services. Please read the following restrictions
+              carefully.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              <span class="font-semibold">
+                You may not, nor allow or assist any third party to:</span
+              >
+              (i) modify, alter, create derivative works from, reverse engineer,
+              decompile, disassemble, or attempt in any other manner to obtain
+              the source code or otherwise reduce to human-perceivable form any
+              part of the Services; (ii) frame, mirror, republish, or distribute
+              all or any portion of the Services in any form or media or by any
+              means; (iii) remove any proprietary notices, labels, or marks on
+              or in any part of the Services, including without limitation any
+              trademark or copyright notices; (iv) perform or disclose to any
+              third party the results of, testing or benchmarking of the
+              Services, or access or use the Services or any part thereof in
+              order to build or support, and/or assist a third party in building
+              or supporting, products or services which are competitive to
+              Lonesome’s; (v) except as expressly permitted herein, copy,
+              emulate, sublicense, rent, or lease any portion of the Services;
+              (vi) use the Services in any manner not expressly authorized by
+              these Terms; (vii) use the Services to transmit (a) any unlawful,
+              racist, harassing, defamatory, abusive, threatening, demeaning,
+              immoral, harmful, vulgar, obscene, pornographic, or otherwise
+              objectionable material of any kind or any material that infringes
+              a third party’s rights including without limitation, intellectual
+              property rights; (viii) take any actions which (1) would disable
+              the Services (or any part thereof) or impair in any way its
+              operation based on the elapsing of a period of time, the exceeding
+              of an authorized number of copies, or the advancement to a
+              particular date or other numeral (referred to as “time bombs”,
+              “time locks”, or “drop dead” devices); or (2) would prevent
+              Lonesome to access the Services for the purposes of its operations
+              or (xii) infringe or violate any of the Terms.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              Intellectual Property
+            </h6>
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              You retain all ownership and intellectual property rights in and
+              to your data which is uploaded to or otherwise provided to
+              Lonesome via the Services. You acknowledge and agree that Lonesome
+              and/or its licensors own the Services, including any copies,
+              emulations, enhancements, modifications and derivative works made
+              thereof and all intellectual property rights in the foregoing.
+              Except as expressly stated herein, these Terms do not grant you
+              any rights or licenses in respect of the Services or to any other
+              intellectual property of Lonesome.
+            </p>
+          </div>
+          <div class="pb-10 md:pb-16">
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              In the event that you provide to Lonesome any suggestions,
+              comments and feedback regarding the Services, you hereby grant
+              Lonesome and its licensors a perpetual, irrevocable, worldwide,
+              royalty-free, fully paid-up license grant to freely use, have
+              used, sell, modify, reproduce, transmit, license, sublicense
+              (through multiple tiers of sublicensees), distribute (through
+              multiple tiers of distributors), and otherwise commercialize such
+              feedback in connection with the Services or related technologies.
+            </p>
+          </div>
+          <div class="pb-10 md:pb-16">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              Your Obligations
+            </h6>
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              You represent that during the Term, you shall: (i) be and remain
+              exclusively responsible for all content, data and information
+              provided via your Amazon Account, and that all such content, data
+              and information has been and shall be legally obtained, does not
+              and will not infringe any third party rights, (ii) comply with all
+              applicable laws and regulations with respect to your activities
+              under these Terms, (iii) carry out all other responsibilities set
+              out in these Terms in a timely and efficient manner, (iv) obtain
+              and shall maintain all necessary licenses, consents, and
+              permissions necessary for Lonesome, its contractors and agents to
+              perform their obligations under these Terms, (v) ensure that your
+              network and systems comply with the relevant specifications
+              provided by Lonesome from time to time. Without derogating from
+              Section ‎11 below, you acknowledge and agree that in the event
+              that the Services does not perform as required, specified,
+              expected and/or desirable by you, your only recourse is to
+              terminate the Terms in accordance with these Terms and Lonesome
+              shall not be liable to you or to any third party with respect
+              thereto. You further acknowledge, represent and agree that your
+              continued use of the Services following any such non-performance,
+              will constitute your acceptance of, and agreement to continue to
+              experience, such Services performance.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              Third Party Components
+            </h6>
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              The Services may use or include third party software, files and
+              components that are subject to open source and/or other third
+              party license terms (“Third Party Components”). Your right to use
+              such Third Party Components as part of, or in connection with, the
+              Services is subject to any applicable acknowledgements and license
+              terms accompanying such Third Party Components, contained therein
+              or related thereto. If there is a conflict between the licensing
+              terms of such Third Party Components and these Terms, the
+              licensing terms of the Third Party Components shall prevail only
+              in connection with the related Third Party Components. These Terms
+              do not apply to any Third Party Components accompanying or
+              contained in the Services and Lonesome disclaims all liability
+              related thereto.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              Indemnification
+            </h6>
+            <p class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]">
+              You agree to defend, indemnify and hold harmless Lonesome from and
+              against any and all claims, damages, obligations, losses,
+              liabilities, costs, debts, and expenses (including but not limited
+              to attorney’s fees) made against or incurred by Lonesome arising
+              directly or indirectly from Your failure to comply with, breach or
+              alleged breach of the terms and conditions hereof and/or included
+              by references herein.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              Disclaimer and Warranties
+            </h6>
+            <p
+              class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]"
+            >
+              Lonesome warrants and represents that (i) the Services does not
+              infringe upon the intellectual property rights of any third party,
+              and (ii) the Services will substantially conform to the
+              Documentation. This warranty shall not apply to the extent of any
+              non-conformance which is caused by use of the Services contrary to
+              Lonesome’s instructions, or modification or alteration of the
+              Services by any party other than Lonesome. If the Services do not
+              substantially conform to the documentation, Lonesome will, at its
+              expense, use all reasonable commercial endeavors to correct any
+              such non-conformance promptly, or provide you with an alternative
+              means of accomplishing the desired performance. Such correction or
+              substitution constitutes your sole and exclusive remedy for any
+              breach of the warranty set out above.
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <p class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]">
+              Lonesome will not be liable for any misuse of the Service by User.
+              Lonesome shall have no liability for any review, rating or
+              recommendation of User’s buyers or customers presented through the
+              Amazon Platform. Any reliance on review, recommendations and
+              ratings is at your sole responsibility and you acknowledge that
+              Lonesome may not review, verify or monitor any such reviews,
+              recommendations or ratings or any user content. Lonesome does not
+              warrant or make any representations regarding the use, the
+              inability to use or operate, or the outcomes or the results of the
+              use of the Services (or any part thereof).
+            </p>
+          </div>
+
+          <div class="pb-10 md:pb-16">
+            <p class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]">
+              EXCEPT FOR THE WARRANTIES SET FORTH ABOVE, YOU UNDERSTAND AND
+              AGREE THAT THE SERVICES ARE PROVIDED ON AN “AS IS” AND “AS
+              AVAILABLE” BASIS, WITHOUT ANY OTHER WARRANTIES OF ANY KIND,
+              EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY,
+              FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, OR RELIABILITY.
+              WITHOUT DEROGATING FROM THE GENERALITY OF THE FOREGOING, YOU
+              ACKNOWLEDGE THAT LONESOME DOES NOT GUARANTEE THAT THE SERVICES OR
+              THE PERFORMANCE OF THE SERVICES WILL BE SECURE, ACCURATE,
+              COMPLETE, UNINTERRUPTED, WITHOUT ERROR, OR FREE OF ANY PROGRAM
+              LIMITATIONS OR FAILURES, OR THAT THE SERVICES AND/OR ANY FEATURE
+              AVAILABLE THEREIN (WHETHER OR NOT CONFIGURABLE BY YOU) AND/OR ANY
+              INFORMATION OBTAINED BY YOU THROUGH THE USE OF THE SERVICES WILL
+              MEET AND/OR PERFORM IN ACCORDANCE YOUR REQUIREMENTS,
+              SPECIFICATIONS, EXPECTATIONS, CONFIGURATIONS AND/OR GOALS, OR THAT
+              LONSOME WILL CORRECT ANY OR ALL SERVICES ERRORS, DEFICIENCIES
+              AND/OR NON-PERFORMANCES. YOU ACKNOWLEDGE THAT LONESOME DOES NOT
+              CONTROL THE TRANSFER OF DATA OVER COMMUNICATIONS FACILITIES,
+              INCLUDING THE INTERNET, AND THAT THE SERVICE AVAILABILITY MAY BE
+              SUBJECT TO LIMITATIONS, DELAYS, AND OTHER PROBLEMS INHERENT IN THE
+              USE OF SUCH COMMUNICATIONS FACILITIES. LONESOME IS NOT RESPONSIBLE
+              FOR ANY DELAYS, DELIVERY FAILURES, OR OTHER DAMAGE RESULTING FROM
+              SUCH PROBLEMS. ADDITIONALLY, YOU ACKNOWLEDGE THAT LONESOME IS NOT
+              LIABLE FOR ANY INFORMATION OR DOCUMENTATION PROVIDED TO YOU OR
+              YOUR CUSTOMERS VIA THE SERVICES BY ANYONE OTHER THAN LONESOME,
+              INCLUDING WITHOUT LIMITATION ANY OPERATORS.
+            </p>
+          </div>
+
+          <div class="">
+            <h6 class="text-xl leading-8 md:text-2xl font-bold mdleading-10">
+              Limitation of Liability
+            </h6>
+            <p class="text-normal text-lg leading-8 md:text-xl md:leading-10 [word-spacing:5px]">
+              IN NO EVENT SHALL LONESOME, INCLUDING ITS OFFICERS, DIRECTORS,
+              SHAREHOLDERS, EMPLOYEES, SUB-CONTRACTORS AND ITS AGENTS BE LIABLE
+              FOR ANY DAMAGES WHATSOEVER, INCLUDING, BUT NOT LIMITED TO, DIRECT,
+              INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY
+              KIND, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+              TORTIOUS ACTIONS RESULTING FROM OR ARISING OUT OF THE SERVICES OR
+              THE USE OR INABILITY TO USE THE SERRVICES, THE PERFORMANCE OR
+              FAILURE OF LONESOME TO PERFORM UNDER THESE TERMS, ANY OTHER ACT OR
+              OMISSION OF LONESOME BY ANY OTHER CAUSE WHATSOEVER; OR BASED UPON
+              BREACH OF WARRANTY, BREACH OF CONTRACT, NEGLIGENCE, STRICT
+              LIABILITY, OR ANY OTHER LEGAL THEORY, REGARDLESS OF WHETHER
+              LONSOME HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.le
+              timeframe.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Team End -->
+
+      <!-- =========== Seller Register Start ============= -->
+      <section class="my-20 md:my-28">
+        <div class="container">
+          <div
+            class="bg-secondary mb-14 md:mb-20 py-9 lg:py-20 rounded-[40px] relative max-md:overflow-hidden"
+          >
+            <div
+              class="flex flex-col lg:flex-row justify-between lg:items-center pl-7 max-md:pb-[250px] md:pl-[350px] lg:pl-[430px] pr-7 lg:pr-20 font-medium"
+            >
+              <div>
+                <h2
+                  class="text-[27px] md:text-[40px] leading-[47px] font-semibold text-white"
+                >
+                  Become a Seller.
+                </h2>
+                <p
+                  class="text-sm md:text-base leading-5 md:leading-7 text-white max-w-sm"
+                >
+                  Fusce venenatis tellus a felis scelerisque. venenatis tellus a
+                  felis scelerisque.
+                </p>
+              </div>
+
+              <div>
+                <a class="white-btn mt-10" href="">Register Now</a>
+              </div>
+            </div>
+            <img
+              class="absolute max-md:left-1/2 max-md:-translate-x-1/2 bottom-0"
+              src="/img/seller.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <h4
+            class="text-[27px] md:text-[40px] leading-[47px] font-semibold pb-4 md:pb-6 text-center"
+          >
+            Follow Us On
+          </h4>
+
+          <ul class="flex items-center gap-2 justify-center">
+            <li>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M4.92503 22.0008H0.363799V7.31212H4.92503V22.0008ZM2.64167 5.30848C1.18333 5.30848 0 4.1 0 2.64167C0 1.18333 1.18254 0 2.64167 0C4.10079 0 5.28333 1.18254 5.28333 2.64167C5.28333 4.1 4.1 5.30848 2.64167 5.30848ZM21.9961 22.0008H17.4451V14.8505C17.4451 13.1463 17.4105 10.9611 15.0737 10.9611C12.7023 10.9611 12.3385 12.8123 12.3385 14.728V22.0008H7.78199V7.31212H12.1562V9.31576H12.2199C12.8288 8.1615 14.3162 6.9436 16.5352 6.9436C21.1514 6.9436 22 9.98364 22 13.932V22.0008H21.9961Z"
+                    fill="#3A0CA3"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M26.3623 10.785C26.3713 11.0182 26.3743 11.2513 26.3743 11.4845C26.3743 18.5541 21.4012 26.7155 12.3071 26.7155C9.51353 26.7155 6.91593 25.8252 4.72731 24.3095C5.11419 24.3519 5.5071 24.3838 5.90603 24.3838C8.22227 24.3838 10.3556 23.5251 12.0478 22.0836C9.88433 22.0518 8.05748 20.4937 7.42742 18.3739C7.72989 18.4375 8.04138 18.4694 8.35992 18.4694C8.8091 18.4694 9.24521 18.4059 9.66324 18.2787C7.39926 17.7911 5.69401 15.629 5.69401 13.0322C5.69401 13.0004 5.69401 12.9897 5.69401 12.9685C6.36124 13.3607 7.12493 13.6043 7.93587 13.6361C6.60742 12.6716 5.73418 11.0288 5.73418 9.17396C5.73418 8.19884 5.97736 7.27668 6.40543 6.48175C8.84326 9.72507 12.488 11.8555 16.5969 12.0781C16.5125 11.6859 16.4693 11.2727 16.4693 10.8593C16.4693 7.90216 18.683 5.50671 21.4142 5.50671C22.8361 5.50671 24.1204 6.15335 25.0217 7.19206C26.1502 6.95888 27.2074 6.51375 28.164 5.899C27.7932 7.1497 27.0104 8.19879 25.9874 8.85594C26.9883 8.72875 27.9429 8.44279 28.8282 8.01883C28.164 9.08933 27.3279 10.0325 26.3623 10.785Z"
+                    fill="#3A0CA3"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- =========== Seller Register End ============ -->
+    </main>
+
+    <!-- Footer Start -->
+    <footer>
+      <!-- footer top start  -->
+
+      <section class="bg-main bg-opacity-10 py-16 md:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-20 container">
+          <div class="max-md:text-center">
+            <img class="pb-10 inline-block" src="/img/logo.png" alt="" />
+            <ul class="">
+              <li
+                class="pb-7 font-medium text-[#2B2B2B] w-56 max-md:mx-auto max-md:text-center"
+              >
+                <p>2728 Hickory StreetSalt Lake City, UT 84104</p>
+              </li>
+              <li class="flex gap-2 pb-7 items-center max-md:justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M19.4282 2.07826L19.3951 2.05762L15.2186 0L10.7107 6.0105L12.7847 8.77597C12.7226 9.8189 12.2803 10.8029 11.5416 11.5416C10.8028 12.2804 9.8188 12.7227 8.77587 12.7847L6.01045 10.7107L0 15.2185L2.04049 19.3602L2.05767 19.3951L2.07836 19.4281C2.18725 19.6036 2.33923 19.7482 2.51984 19.8483C2.70046 19.9484 2.90368 20.0006 3.11018 20H4.18787C6.26435 20 8.3205 19.591 10.2389 18.7964C12.1573 18.0017 13.9005 16.837 15.3687 15.3687C16.837 13.9004 18.0017 12.1573 18.7964 10.2389C19.591 8.32046 20 6.2643 20 4.18782V3.11008C20.0007 2.90359 19.9485 2.70036 19.8484 2.51975C19.7483 2.33914 19.6036 2.18715 19.4282 2.07826ZM18.4566 4.18782C18.4566 12.0556 12.0556 18.4566 4.18787 18.4566H3.31584L1.95059 15.685L6.01074 12.6399L8.27122 14.3352H8.52845C10.0681 14.3335 11.5441 13.7211 12.6328 12.6325C13.7215 11.5438 14.3338 10.0677 14.3356 8.52811V8.27089L12.6403 6.01046L15.685 1.95054L18.4566 3.31603V4.18782Z"
+                    fill="#2B2B2B"
+                  />
+                </svg>
+                <span class="font-medium text-[#2B2B2B]">+972-214-2298</span>
+              </li>
+              <li class="flex gap-2 items-center max-md:justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="16"
+                  viewBox="0 0 22 16"
+                  fill="none"
+                >
+                  <path
+                    d="M6 5L11 8.5L16 5"
+                    stroke="#2B2B2B"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1 13V3C1 1.89543 1.89543 1 3 1H19C20.1046 1 21 1.89543 21 3V13C21 14.1046 20.1046 15 19 15H3C1.89543 15 1 14.1046 1 13Z"
+                    stroke="#2B2B2B"
+                    stroke-width="1.6"
+                  />
+                </svg>
+                <span class="font-medium text-[#2B2B2B]">support@labs.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hidden md:flex gap-28">
+            <div>
+              <h4 class="text-base md:text-xl pb-10 font-medium">
+                Quick Links
+              </h4>
+              <ul class="leading-7">
+                <li><a href="">Home</a></li>
+                <li><a href="">title</a></li>
+                <li><a href="">title</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Become a Agent</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-base md:text-xl pb-10 font-medium">Discovery</h4>
+              <ul class="leading-7">
+                <li><a href="">Title title</a></li>
+                <li><a href="">Title title</a></li>
+                <li><a href="">Title title</a></li>
+                <li><a href="">Title title</a></li>
+                <li><a href="">Title title</a></li>
+                <li><a href="">Title title</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="max-md:flex flex-col justify-center items-center">
+            <h4
+              class="text-base md:text-xl pb-6 font-medium w-56 text-center md:text-left"
+            >
+              Subscribe to our Newsletter!
+            </h4>
+
+            <div
+              class="relative px-4 shadow-lg rounded-full md:rounded-xl mb-8 w-72 md:w-80 h-14 md:h-16 bg-white overflow-hidden"
+            >
+              <input
+                class="h-full focus:outline-none w-[93%] text-sm md:text-base"
+                type="search"
+                placeholder="Email Address"
+              />
+              <button
+                class="absolute right-2 top-2 bg-main w-10 md:w-12 h-10 md:h-12 flex justify-center items-center rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                >
+                  <path
+                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <h4 class="text-base md:text-xl pb-6 font-medium">Follow Us On</h4>
+
+            <ul class="flex items-center gap-2">
+              <li>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.92503 22.0008H0.363799V7.31212H4.92503V22.0008ZM2.64167 5.30848C1.18333 5.30848 0 4.1 0 2.64167C0 1.18333 1.18254 0 2.64167 0C4.10079 0 5.28333 1.18254 5.28333 2.64167C5.28333 4.1 4.1 5.30848 2.64167 5.30848ZM21.9961 22.0008H17.4451V14.8505C17.4451 13.1463 17.4105 10.9611 15.0737 10.9611C12.7023 10.9611 12.3385 12.8123 12.3385 14.728V22.0008H7.78199V7.31212H12.1562V9.31576H12.2199C12.8288 8.1615 14.3162 6.9436 16.5352 6.9436C21.1514 6.9436 22 9.98364 22 13.932V22.0008H21.9961Z"
+                      fill="#3A0CA3"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M26.3623 10.785C26.3713 11.0182 26.3743 11.2513 26.3743 11.4845C26.3743 18.5541 21.4012 26.7155 12.3071 26.7155C9.51353 26.7155 6.91593 25.8252 4.72731 24.3095C5.11419 24.3519 5.5071 24.3838 5.90603 24.3838C8.22227 24.3838 10.3556 23.5251 12.0478 22.0836C9.88433 22.0518 8.05748 20.4937 7.42742 18.3739C7.72989 18.4375 8.04138 18.4694 8.35992 18.4694C8.8091 18.4694 9.24521 18.4059 9.66324 18.2787C7.39926 17.7911 5.69401 15.629 5.69401 13.0322C5.69401 13.0004 5.69401 12.9897 5.69401 12.9685C6.36124 13.3607 7.12493 13.6043 7.93587 13.6361C6.60742 12.6716 5.73418 11.0288 5.73418 9.17396C5.73418 8.19884 5.97736 7.27668 6.40543 6.48175C8.84326 9.72507 12.488 11.8555 16.5969 12.0781C16.5125 11.6859 16.4693 11.2727 16.4693 10.8593C16.4693 7.90216 18.683 5.50671 21.4142 5.50671C22.8361 5.50671 24.1204 6.15335 25.0217 7.19206C26.1502 6.95888 27.2074 6.51375 28.164 5.899C27.7932 7.1497 27.0104 8.19879 25.9874 8.85594C26.9883 8.72875 27.9429 8.44279 28.8282 8.01883C28.164 9.08933 27.3279 10.0325 26.3623 10.785Z"
+                      fill="#3A0CA3"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer top end  -->
+      <!-- footer bottom start  -->
+      <section class="bg-[#0B090A] py-5">
+        <div class="flex justify-center md:justify-between container">
+          <p class="text-[#AAA] text-xs md:text-base">
+            © Lonesome Labs – All rights reserved
+          </p>
+          <ul class="hidden md:flex gap-10">
+            <li>
+              <a class="text-[#AAA] text-sm md:text-base" href=""
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a class="text-[#AAA] text-sm md:text-base" href=""
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a class="text-[#AAA] text-sm md:text-base" href="">Disclaimer</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- footer bottom end -->
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/main.js"></script>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        navLinks.classList.toggle("top-[9%]");
+      }
+      // =====================
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".testimonial-swiper-next-btn",
+          prevEl: ".testimonial-swiper-prev-btn",
+        },
+        loop: true,
+      });
+
+      // =====================
+
+      var swiper = new Swiper(".videoSwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".video-swiper-next-btn",
+          prevEl: ".video-swiper-prev-btn",
+        },
+        loop: true,
+      });
+
+      // =====================
+    </script>
+  </body>
+</html>
