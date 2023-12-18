@@ -6,14 +6,25 @@
   font-family: "Poppins", sans-serif;
 }
 
+.libre-font{
+  font-family: 'Libre Baskerville', serif;
+}
+.montserrat-font{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inter-font{
+  font-family: 'Inter', sans-serif;
+}
+
 .white-btn {
   @apply text-main bg-white border border-main rounded-full py-4 px-8 inline-block;
 }
 .main-btn{
-  @apply text-white bg-main border border-main rounded-full py-4 px-8 inline-block font-medium md:font-bold text-base md:text-xl;
-
-
+  @apply text-white bg-main border border-main rounded-full py-4 px-14 inline-block font-medium lg:font-bold text-base lg:text-xl;
 }
+
+
 .section-subheading {
   @apply text-base md:text-xl  tracking-[3px] pb-3 md:pb-4 uppercase font-medium;
 }
@@ -41,3 +52,14 @@
    background: #2c2c2c;
  }
 
+
+
+ /* Add your custom styles here */
+
+
+
+
+
+ .accordion-item:not(.open) .accordion-collapse {
+   display: none;
+ }

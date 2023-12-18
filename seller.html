@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lonesome Labs</title>
+    <title>Seller - Lonesome Labs</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -96,21 +96,21 @@
                     <li>
                       <a
                         href="#"
-                        class=" border-b hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
+                        class="border-b hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
                         >Item 1</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class=" border-b hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
+                        class="border-b hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
                         >Item 2</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class=" hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
+                        class="hover:bg-[#4361ee4d] py-2 px-4 block whitespace-no-wrap"
                         >Item 3</a
                       >
                     </li>
@@ -250,7 +250,7 @@
         class="relative overflow-hidden -z-10 bg-[#F8F8F8]"
       >
         <div
-          class="text-center flex flex-col justify-center pt-16 pb-16 md:pb-32 lg:pb-44 z-10"
+          class="text-center h-auto relative  rounded-b-full pt-8 md:pt-16 pb-14 md:pb-32"
         >
           <h1 class="text-[40px] md:text-[76px] font-bold text-main">
             The Lonesome Labs Guides
@@ -265,14 +265,10 @@
           >
             Strategies, Tips, and Best Practices for Beginners to Experts
           </p>
-        </div>
-
-        <div
-          class="w-full h-[calc(100%+550px)] sm:h-[calc(100%+450px)] md:h-[calc(100%+650px)] lg:h-[calc(100%+700px)] absolute bg-center -top-[110%] left-0 rounded-full overflow-hidden -z-10"
-        >
           <div
-            class="bg-gradient-to-b from-secondary to-main opacity-20 absolute top-0 left-0 w-full h-full rounded-full -z-10"
+            class="-top-[60%] -left-0 right-0 h-[150%] absolute bg-gradient-to-b from-gray-300 to-secondary opacity-25 rounded-b-full -z-10"
           ></div>
+          
         </div>
       </section>
       <!-- Hero End -->
@@ -653,45 +649,8 @@
     </footer>
     <!-- Footer End -->
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <script src="/main.js"></script>
-    <script>
-      const navLinks = document.querySelector(".nav-links");
-      function onToggleMenu(e) {
-        navLinks.classList.toggle("top-[9%]");
-      }
-      // =====================
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        navigation: {
-          nextEl: ".testimonial-swiper-next-btn",
-          prevEl: ".testimonial-swiper-prev-btn",
-        },
-        loop: true,
-      });
-
-      // =====================
-
-      var swiper = new Swiper(".videoSwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".video-swiper-next-btn",
-          prevEl: ".video-swiper-prev-btn",
-        },
-        loop: true,
-      });
-
-      // =====================
-    </script>
   </body>
 </html>
