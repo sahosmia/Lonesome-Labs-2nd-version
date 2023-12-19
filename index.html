@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -18,7 +18,10 @@
   <!-- swiper css  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
@@ -27,7 +30,7 @@
     <nav>
       <div class="container flex justify-between w-full items-center h-20 bg-white">
         <div class="pr-20">
-          <img class="w-full" src="/img/logo.png" alt="" />
+          <img class="w-full" src="img/logo.png" alt="" />
         </div>
 
         <div id="menu"
@@ -118,7 +121,7 @@
     <section id="hero-section" class="relative overflow-hidden pb-10 md:pb-40">
       <div class="text-center max-w-6xl m-auto pt-14 md:pb-10 md:pt-28 z-10">
         <div class="flex justify-center items-center pb-5 md:pb-10">
-          <img class="h-16 md:h-20" src="./img/logo-star.png" alt="" />
+          <img class="h-16 md:h-20" src="img/logo-star.png" alt="" />
         </div>
 
         <h1 class="text-[40px] lg:text-[72px] font-bold text-main">
@@ -150,11 +153,13 @@
         </ul>
 
         <div class="flex justify-center pt-16 lg:pt-24">
-          <a href="#" class="main-btn">Get Amazon Reviews</a>
+          <a href="#"
+            class="text-white bg-main border border-main rounded-full py-4 px-14 inline-block font-medium lg:font-bold text-base lg:text-xl">Get
+            Amazon Reviews</a>
         </div>
 
         <div class="flex justify-center pt-10">
-          <img src="./img/hero.png" alt="" />
+          <img src="img/hero.png" alt="" />
         </div>
       </div>
 
@@ -168,8 +173,8 @@
     <section class="bg-main py-28" id="testimonial-section">
       <div class="container flex flex-col md:flex-row justify-between gap-10">
         <div class="flex-1 md:mr-20">
-          <p class="section-subheading text-white">Testimonials</p>
-          <h1 class="section-heading text-white">
+          <p class="text-base md:text-xl tracking-[3px] pb-3 md:pb-4 uppercase font-medium text-white">Testimonials</p>
+          <h1 class="text-[27px] md:text-[40px] font-semibold text-white">
             The <span class="text-[#FDB61C]">#1</span> rated app in the Amazon
             partner appstore
           </h1>
@@ -180,10 +185,10 @@
           </p>
           <div class="hidden md:flex gap-8 mt-10">
             <div class="testimonial-swiper-prev-btn cursor-pointer">
-              <img src="/img/testimonial-next.svg" alt="" />
+              <img src="img/testimonial-next.svg" alt="" />
             </div>
             <div class="testimonial-swiper-next-btn cursor-pointer">
-              <img src="/img/testimonial-prev.svg" alt="" />
+              <img src="img/testimonial-prev.svg" alt="" />
             </div>
           </div>
         </div>
@@ -192,7 +197,7 @@
         <div class="flex-1 swiper mySwiper flex justify-center items-center">
           <div class="swiper-wrapper w-72 md:w-full h-fit">
             <div class="swiper-slide rounded-xl overflow-hidden relative bg-white px-8 py-8">
-              <img src="/img/qutetion.svg" alt="" />
+              <img src="img/qutetion.svg" alt="" />
 
               <p class="text-base md:text-xl font-medium text-[#2B2B2B] pt-5 pb-6">
                 Excellent service and amenities, the service has been running
@@ -200,14 +205,14 @@
                 daily basis.
               </p>
               <div class="border-t-2 flex gap-3 border-[#D4D4D4] pt-4">
-                <img class="w-14 h-14 rounded-full" src="/img/testimonial.jpg" alt="" />
+                <img class="w-14 h-14 rounded-full" src="img/testimonial.jpg" alt="" />
                 <div class="flex flex-1 flex-col lg:flex-row justify-between">
                   <div class="">
                     <h6 class="font-medium text-xl md:text-2xl text-[#2B2B2B]">
                       Fair-e-Trade
                     </h6>
                     <div class="flex gap-2 items-center">
-                      <img class="w-8" src="/img/verified-testimonial.svg" alt="" />
+                      <img class="w-8" src="img/verified-testimonial.svg" alt="" />
                       <span class="text-[#808080] text-base md:text-xl font-medium">Verified Seller</span>
                     </div>
                   </div>
@@ -235,7 +240,7 @@
               </div>
             </div>
             <div class="swiper-slide rounded-xl overflow-hidden relative bg-white px-8 py-8">
-              <img src="/img/qutetion.svg" alt="" />
+              <img src="img/qutetion.svg" alt="" />
 
               <p class="text-base md:text-xl font-medium text-[#2B2B2B] pt-5 pb-6">
                 Excellent service and amenities, the service has been running
@@ -243,14 +248,14 @@
                 daily basis.
               </p>
               <div class="border-t-2 flex gap-3 border-[#D4D4D4] pt-4">
-                <img class="w-14 h-14 rounded-full" src="/img/testimonial.jpg" alt="" />
+                <img class="w-14 h-14 rounded-full" src="img/testimonial.jpg" alt="" />
                 <div class="flex flex-1 flex-col lg:flex-row justify-between">
                   <div class="">
                     <h6 class="font-medium text-xl md:text-2xl text-[#2B2B2B]">
                       Fair-e-Trade
                     </h6>
                     <div class="flex gap-2 items-center">
-                      <img class="w-8" src="/img/verified-testimonial.svg" alt="" />
+                      <img class="w-8" src="img/verified-testimonial.svg" alt="" />
                       <span class="text-[#808080] text-base md:text-xl font-medium">Verified Seller</span>
                     </div>
                   </div>
@@ -307,13 +312,15 @@
             </p>
 
             <div>
-              <a href="#" class="main-btn">Install Now</a>
+              <a href="#"
+                class="text-white bg-main border border-main rounded-full py-4 px-14 inline-block font-medium lg:font-bold text-base lg:text-xl">Install
+                Now</a>
             </div>
           </div>
 
           <div class="w-full md:w-6/12 xl:w-7/12 max-md:pt-10">
             <!-- <div> -->
-            <img class="max-h-min ms-auto w-full" src="./img/feedback-one.png" alt="" />
+            <img class="max-h-min ms-auto w-full" src="img/feedback-one.png" alt="" />
             <!-- </div> -->
           </div>
         </div>
@@ -325,7 +332,7 @@
         <div class="flex flex-col-reverse md:flex-row">
           <div class="w-full md:w-6/12 xl:w-7/12 max-md:pt-10">
             <div>
-              <img class="max-h-min w-full" src="./img/feedback-two.png" alt="" />
+              <img class="max-h-min w-full" src="img/feedback-two.png" alt="" />
             </div>
           </div>
           <div class="w-full md:w-6/12 xl:w-5/12 flex flex-col justify-center md:pl-10">
@@ -338,7 +345,9 @@
             </p>
 
             <div>
-              <a href="#" class="main-btn">Install Now</a>
+              <a href="#"
+                class="text-white bg-main border border-main rounded-full py-4 px-14 inline-block font-medium lg:font-bold text-base lg:text-xl">Install
+                Now</a>
             </div>
           </div>
         </div>
@@ -359,13 +368,15 @@
             </p>
 
             <div>
-              <a href="#" class="main-btn">Install Now</a>
+              <a href="#"
+                class="text-white bg-main border border-main rounded-full py-4 px-14 inline-block font-medium lg:font-bold text-base lg:text-xl">Install
+                Now</a>
             </div>
           </div>
 
           <div class="w-full md:w-6/12 xl:w-7/12 max-md:pt-10">
             <!-- <div> -->
-            <img class="max-h-min ms-auto w-full" src="./img/feedback-three.png" alt="" />
+            <img class="max-h-min ms-auto w-full" src="img/feedback-three.png" alt="" />
             <!-- </div> -->
           </div>
         </div>
@@ -378,7 +389,7 @@
         <div class="flex flex-col-reverse md:flex-row">
           <div class="w-full md:w-6/12 xl:w-7/12 max-md:pt-10">
             <div>
-              <img class="max-h-min w-full" src="./img/feedback-four.png" alt="" />
+              <img class="max-h-min w-full" src="img/feedback-four.png" alt="" />
             </div>
           </div>
           <div class="w-full md:w-6/12 xl:w-5/12 flex flex-col justify-center md:pl-10">
@@ -392,7 +403,9 @@
             </p>
 
             <div>
-              <a href="#" class="main-btn">Install Now</a>
+              <a href="#"
+                class="text-white bg-main border border-main rounded-full py-4 px-14 inline-block font-medium lg:font-bold text-base lg:text-xl">Install
+                Now</a>
             </div>
           </div>
         </div>
@@ -414,13 +427,15 @@
             </p>
 
             <div>
-              <a href="#" class="main-btn">Install Now</a>
+              <a href="#"
+                class="text-white bg-main border border-main rounded-full py-4 px-14 inline-block font-medium lg:font-bold text-base lg:text-xl">Install
+                Now</a>
             </div>
           </div>
 
           <div class="w-full md:w-6/12 xl:w-7/12 max-md:pt-10">
             <!-- <div> -->
-            <img class="max-h-min ms-auto w-full" src="./img/feedback-five.png" alt="" />
+            <img class="max-h-min ms-auto w-full" src="img/feedback-five.png" alt="" />
             <!-- </div> -->
           </div>
         </div>
@@ -534,10 +549,11 @@
             </div>
 
             <div>
-              <a class="white-btn mt-10" href="">Register Now</a>
+              <a class="text-main bg-white border border-main rounded-full py-4 px-8 inline-block mt-10"
+                href="#">Register Now</a>
             </div>
           </div>
-          <img class="absolute max-md:left-1/2 max-md:-translate-x-1/2 bottom-0" src="/img/seller.png" alt="" />
+          <img class="absolute max-md:left-1/2 max-md:-translate-x-1/2 bottom-0" src="img/seller.png" alt="" />
         </div>
       </div>
 
@@ -548,7 +564,7 @@
 
         <ul class="flex items-center gap-2 justify-center">
           <li>
-            <a href="">
+            <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 22" fill="none">
                 <path
                   d="M4.92503 22.0008H0.363799V7.31212H4.92503V22.0008ZM2.64167 5.30848C1.18333 5.30848 0 4.1 0 2.64167C0 1.18333 1.18254 0 2.64167 0C4.10079 0 5.28333 1.18254 5.28333 2.64167C5.28333 4.1 4.1 5.30848 2.64167 5.30848ZM21.9961 22.0008H17.4451V14.8505C17.4451 13.1463 17.4105 10.9611 15.0737 10.9611C12.7023 10.9611 12.3385 12.8123 12.3385 14.728V22.0008H7.78199V7.31212H12.1562V9.31576H12.2199C12.8288 8.1615 14.3162 6.9436 16.5352 6.9436C21.1514 6.9436 22 9.98364 22 13.932V22.0008H21.9961Z"
@@ -578,7 +594,7 @@
     <section class="bg-main bg-opacity-10 py-16 md:py-24">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-20 container">
         <div class="max-md:text-center">
-          <img class="pb-10 inline-block" src="/img/logo.png" alt="" />
+          <img class="pb-10 inline-block" src="img/logo.png" alt="" />
           <ul class="">
             <li class="pb-7 font-medium text-[#2B2B2B] w-56 max-md:mx-auto max-md:text-center">
               <p>2728 Hickory StreetSalt Lake City, UT 84104</p>
@@ -701,10 +717,10 @@
   </footer>
   <!-- Footer End -->
 
+  
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script src="/main.js"></script>
+  <script src="js/main.js"></script>
   <script>
     // =====================
     var swiper = new Swiper(".mySwiper", {
@@ -718,6 +734,7 @@
       loop: true,
     });
   </script>
+
 </body>
 
 </html>
