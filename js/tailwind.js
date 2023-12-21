@@ -10,5 +10,10 @@ tailwind.config = {
         "hero-pattern": "url('/img/hero-bg.png')",
       },
     },
+    container: {
+      center: true,
+      padding: "2rem",
+    },
   },
+
 };
