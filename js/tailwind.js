@@ -11,13 +11,17 @@ tailwind.config = {
       },
     },
     screens: {
-      sm: "640px", // => @media (min-width: 640px) { ... }
-      md: "768px", // => @media (min-width: 768px) { ... }
-      lg: "1024px", // => @media (min-width: 1024px) { ... }
-      xl: "1124px", // => @media (min-width: 1280px) { ... }
-      "2xl": "1280px", // => @media (min-width: 1280px) { ... }
-      "3xl": "1440px", // => @media (min-width: 1280px) { ... }
-      "4xl": "1620px",
+      sm: "640px", 
+      md: "768px", 
+      lg: "1024px", 
+      xl: "1124px", 
+      "2xl": "1280px", 
+      "3xl": "1366px", 
+      "4xl": "1440px", 
+      "5xl": "1536px", 
+      "6xl": "1600px", 
+      "7xl": "1720px",
+      "8xl": "1920px",
     },
     container: {
       center: true,
@@ -27,8 +31,12 @@ tailwind.config = {
         lg: "4rem",
         xl: "5rem",
         "2xl": "6rem",
-        "3xl": "8rem",
-        "4xl": "10rem",
+        "3xl": "7rem",
+        "4xl": "8rem",
+        "5xl": "9rem",
+        "6xl": "10rem",
+        "7xl": "11rem",
+        "8xl": "12rem",
       },
     },
   },
