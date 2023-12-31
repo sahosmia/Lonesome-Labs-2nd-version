@@ -39,3 +39,17 @@
 .accordion-item:not(.open) .accordion-collapse {
   display: none;
 }
+
+
+
+ol.post-ol {
+  list-style: none;
+  counter-reset: my-counter;
+}
+
+
+ol.post-ol li::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+
+}
